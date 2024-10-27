@@ -1,0 +1,18 @@
+[
+    {
+        "word": "cat",
+        "tanscription": "[cat]",
+        "translate": "кот"
+    },
+    {
+        "word": "dog",
+        "tanscription": "[dog]",
+        "translate": "собака"
+    },
+    {
+        "word": "mause",
+        "tanscription": "[mause]",
+        "translate": "мышь"
+    }
+
+]

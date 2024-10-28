@@ -1,0 +1,15 @@
+.card {
+  display: flex;
+  gap: 2%;
+  margin-bottom: 2%;
+}
+
+.text {
+  font-size: 24;
+  font-weight: 700;
+  color: rgba(12, 86, 95, 0.986);
+  height: 50px;
+  width: 300px;
+  border: 2px solid rgba(12, 86, 95, 0.986);
+  border-radius: 10px;
+}

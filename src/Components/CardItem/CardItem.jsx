@@ -1,15 +1,15 @@
 
-import styles from "./cardItem.module.css"
+import Button from "../Button/Button";
+import styles from "./cardItem.module.scss"
 
-export default function CardItem({ name, price, internet, text, color }){
+export default function CardItem({ word, transcription, russian}){
     return(
-        <div className={styles[color + `Card`]}>
-            <div className={styles[color]}>
-                <h2 className={styles.h2}>{name}</h2>
-                <p className = {styles.price}>{price}</p>
-            </div>
-            <p className = {styles.internet}>{internet}</p>
-            <p className = {styles.text}>{text}</p>
+        <div className={styles.card}>
+            <div className = {styles.text}>{word}</div>
+            <div className = {styles.text}>{transcription}</div>
+            <div className = {styles.text}>{russian}</div>
+            <Button button = "Редактировать"/>
+            <Button button = "Удалить"/>
         </div>
     );
 }

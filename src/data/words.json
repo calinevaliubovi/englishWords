@@ -1,18 +1,18 @@
 [
     {
         "word": "cat",
-        "tanscription": "[cat]",
-        "translate": "кот"
+        "transcription": "/kæt/",
+        "russian": "кот"
     },
     {
         "word": "dog",
-        "tanscription": "[dog]",
-        "translate": "собака"
+        "transcription": "[dɔːɡ]",
+        "russian": "собака"
     },
     {
         "word": "mause",
-        "tanscription": "[mause]",
-        "translate": "мышь"
+        "transcription": "[maʊθ]",
+        "russian": "мышь"
     }
 
 ]

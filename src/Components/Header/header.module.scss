@@ -1,0 +1,28 @@
+@use "../../style/variables.scss";
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 50px;
+  width: 100vw;
+  background-color: variables.$bg-main;
+}
+
+.nav {
+  display: flex;
+  justify-content: end;
+  gap: 3%;
+  margin-right: 150px;
+}
+
+.nav_element {
+  color: variables.$font-contrast-color;
+  list-style-type: none;
+
+  &:hover {
+    cursor: pointer;
+    color: variables.$font-contrast-color-hover;
+    border-bottom: 2px solid variables.$font-contrast-color-hover;
+  }
+}

@@ -1,6 +1,14 @@
+@use "../../style/variables.scss";
+
 .button {
   height: 50px;
   width: 200px;
-  background-color: rgba(39, 118, 128, 0.986);
-  color: #fff;
+  background-color: variables.$bg-main;
+  color: variables.$font-contrast-color;
+
+  &:hover {
+    background-color: variables.$bg-hover;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
 }

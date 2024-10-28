@@ -1,12 +1,13 @@
-
-import Cards from "../Components/Cards/Cards"
+import Header from "../Components/Header/Header"
+import Main from "../Components/Main/Main"
 import './App.css'
 
 function App() {
 
   return (
     <>
-      <Cards/>
+      <Header/>
+      <Main/>
     </>
   )
 }

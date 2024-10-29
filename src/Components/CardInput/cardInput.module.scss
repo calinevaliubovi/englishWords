@@ -1,0 +1,20 @@
+@use "../../style/variables" as vars;
+
+.h1 {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.input {
+  @include vars.input;
+}
+
+.input_container {
+  display: flex;
+  margin-bottom: 50px;
+  gap: 5%;
+}
+
+.button {
+  background-color: green;
+}

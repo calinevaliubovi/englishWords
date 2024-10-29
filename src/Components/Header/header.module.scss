@@ -14,15 +14,16 @@
   justify-content: end;
   gap: 3%;
   margin-right: 150px;
-}
 
-.nav_element {
-  color: variables.$font-contrast-color;
-  list-style-type: none;
+  li {
+    color: variables.$font-contrast-color;
+    list-style-type: none;
 
-  &:hover {
-    cursor: pointer;
-    color: variables.$font-contrast-color-hover;
-    border-bottom: 2px solid variables.$font-contrast-color-hover;
+    &:hover {
+      cursor: pointer;
+      color: variables.$font-contrast-color-hover;
+      border-bottom: 2px solid variables.$font-contrast-color-hover;
+      transition: all 1s;
+    }
   }
 }

@@ -17,3 +17,8 @@ $font-contrast-color-hover: #e6e6e6;
   border: 2px solid rgba(12, 86, 95, 0.986);
   border-radius: 10px;
 }
+
+@mixin button {
+  height: 50px;
+  color: $font-contrast-color;
+}

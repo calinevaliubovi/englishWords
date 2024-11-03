@@ -8,8 +8,8 @@ export default function CardItem({ word, transcription, russian}){
             <div className = {styles.text}>{word}</div>
             <div className = {styles.text}>{transcription}</div>
             <div className = {styles.text}>{russian}</div>
-            <Button button = "Редактировать"/>
-            <Button button = "Удалить"/>
+            <Button color = "greenButton" btn = "Редактировать"/>
+            <Button color = "redButton" btn = "Удалить"/>
         </div>
     );
 }

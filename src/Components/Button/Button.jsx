@@ -1,10 +1,19 @@
 
-import style from "./button.module.scss"
+import styles from "./button.module.scss"
 
-export default function Button (props) {
+export default function Button ({color, btn}) {
+    
+    const buttonClass = color === 'redButton' 
+    ? styles.redButton 
+    : color === 'greenButton' 
+    ? styles.greenButton
+    : color === 'transleteButton'
+    ? styles.transleteButton 
+    : styles.blueButton;
+
     return (
         <>
-            <button className = {style.button_main}>{props.button}</button>
+            <button className = {`${styles.button} ${buttonClass}`}>{btn}</button>
         </>
         
     )

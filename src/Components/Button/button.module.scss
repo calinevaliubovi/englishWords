@@ -1,26 +1,55 @@
-@use "../../style/variables.scss";
+@use "../../style/variables.scss" as var;
 
-.button_main {
-  height: 50px;
-  width: 200px;
-  background-color: variables.$bg-main;
-  color: variables.$font-contrast-color;
-
+.button {
+  @include var.button;
   &:hover {
-    background-color: variables.$bg-hover;
     cursor: pointer;
     transition: all 0.5s;
   }
 }
 
-.button_input {
-  height: 50px;
+.redButton {
+  @include var.button;
   width: 200px;
-  background-color: green;
-  color: variables.$font-contrast-color;
+  background-color: rgb(162, 74, 74);
 
   &:hover {
-    background-color: variables.$bg-hover;
+    background-color: rgb(122, 56, 56);
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+}
+.greenButton {
+  @include var.button;
+  width: 200px;
+  background-color: rgb(75, 127, 78);
+
+  &:hover {
+    background-color: rgb(52, 85, 54);
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+}
+
+.blueButton {
+  @include var.button;
+  width: 400px;
+  background-color: var.$bg-main;
+
+  &:hover {
+    background-color: var.$bg-hover;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+}
+
+.transleteButton {
+  @include var.button;
+  width: 150px;
+  background-color: var.$bg-main;
+
+  &:hover {
+    background-color: var.$bg-hover;
     cursor: pointer;
     transition: all 0.5s;
   }

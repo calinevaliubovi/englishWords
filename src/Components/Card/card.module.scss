@@ -1,0 +1,18 @@
+@use "../../style/variables" as var;
+
+.word_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7%;
+  height: 400px;
+  width: 200px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 20px 20px 100px var.$bg-main;
+}
+.text {
+  font-size: 24px;
+}

@@ -1,4 +1,4 @@
-@use "../../style/variables.scss" as vars;
+@use "../../style/variables.scss" as var;
 
 .card {
   display: flex;
@@ -7,5 +7,40 @@
 }
 
 .text {
-  @include vars.input;
+  @include var.input;
+}
+
+.button {
+  @include var.button;
+  width: 200px;
+  background-color: var.$bg-main;
+
+  &:hover {
+    background-color: var.$bg-hover;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+}
+
+.red {
+  @include var.button;
+  width: 200px;
+  background-color: red;
+
+  &:hover {
+    background-color: var.$bg-hover;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+}
+.green {
+  @include var.button;
+  width: 200px;
+  background-color: green;
+
+  &:hover {
+    background-color: var.$bg-hover;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
 }

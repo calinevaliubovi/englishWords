@@ -1,15 +1,15 @@
 
-import words from "../../data/words.json"
-import CardItem from "../CardItem/CardItem"
+import Card from "../Card/Card"
 import styles from "./cards.module.scss"
 
 
 export default function Cards () {
     return(
         <div className={styles.cards}>
-            {words.map((item, index) => (
-            <CardItem key={index} {...item}/>
-            ))}
+            <Card word="cat" transcription = "/kæt/" russian = "кот"/>
+            {/* {words.map((item, index) => (
+            <Card key={index} {...item}/>
+            ))} */}
         </div>
     );
 }

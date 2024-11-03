@@ -10,7 +10,7 @@ export default function CardInput(){
             <input className={styles.input} type="text" placeholder="english"></input>
             <input className={styles.input} type="text" placeholder="transcription"></input>
             <input className={styles.input} type="text" placeholder="russian"></input>
-            <Button button = "Сохранить"/>
+            <Button color = "blueButton" btn = "Сохранить"/>
         </div>
         </>
     )
